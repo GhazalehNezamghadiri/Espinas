@@ -1,0 +1,373 @@
+@import "tailwindcss";
+
+
+body{
+    direction: rtl;
+    font-family: "Rubik", sans-serif;
+}
+@layer utilities{
+    .bgHead{
+        background-color: rgba(0, 0, 0, 0.652);
+    }
+    .back{
+        background-image: url(../img/espinas_spa_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+    .gradient{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.937) , rgba(0, 0, 0, 0) );
+    }
+
+    .back2{
+        background-image: url(../img/espinas_offer_bg.jpg);
+        background-size: contain;
+    }
+
+    .anniversary{
+        background-image: url(../img/espinas_anniversary_offer.jpg);
+        background-size: 350px 450px;
+        background-repeat: no-repeat;
+    }
+    .hbd{
+        background-image: url(../img/espinas_birthday_offer.jpg);
+        background-size: 350px 450px;
+        background-repeat: no-repeat;
+    }
+    .marriage{
+        background-image: url(../img/espinas_marriage_offer.jpg);
+        background-size: 350px 450px;
+        background-repeat: no-repeat;
+    }
+    .foot{
+        background-image: url(../img/espinas_footer_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (min-width:1600px) {
+        .myheight{
+            height: 50vh;
+        }
+        .myheight3{
+            height: 70vh;
+        }
+        .myheight2{
+            min-height: 50vh;
+        } 
+    }
+}
+
+
+
+@theme{
+    --color-main:#e4a853;
+    --color-room:#1c1c1c;
+    --color-room2:#dfe4e8;
+    --color-room3:#916e27;
+    --color-owj:#d1ad8a;
+    --color-experience:#ececec;
+    --color-box:#cdcdcd;
+    --color-box2:#686868;
+    --color-more:#d49734;
+    --color-foot:#191919;
+    
+  
+}
+
+@keyframes img1{
+    0%{opacity: 1;}
+    9%{opacity: 1;}
+    14%{opacity: 0;}
+    15.000001%{opacity: 0;}
+    97%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+@keyframes img2{
+    0%{opacity: 0;}
+    9%{opacity: 0;}
+    15%{opacity:1;}
+    24%{opacity: 1;}
+    25.000001%{opacity: 0;}
+    97%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+@keyframes img3{
+    0%{opacity: 0;}
+    24%{opacity: 0;}
+    25%{opacity: 1;}
+    34%{opacity: 1;}
+    35.000001%{opacity: 0;}
+    97%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+@keyframes img4{
+    0%{opacity: 0;}
+    34%{opacity: 0;}
+    35%{opacity: 1;}
+    44%{opacity: 1;}
+    45.000001%{opacity: 0;}
+    98%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+@keyframes img5{
+    0%{opacity: 0;}
+    44%{opacity: 0;}
+    45%{opacity: 1;}
+    54%{opacity: 1;}
+    55.000001%{opacity: 0;}
+    99%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes img6{
+    0%{opacity: 0;}
+    54%{opacity: 0;}
+    55%{opacity: 1;}
+    64%{opacity: 1;}
+    65.000001%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes img7{
+    0%{opacity: 0;}
+    64%{opacity: 0;}
+    65%{opacity: 1;}
+    74%{opacity: 1;}
+    75.000001%{opacity: 0;}
+    96%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes img8 {
+    0%{opacity: 0;}
+    74%{opacity: 0;}
+    75%{opacity: 1;}
+    84%{opacity: 1;}
+    85.000001%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes img9 {
+    0%{opacity: 0;}
+    84%{opacity: 0;}
+    85%{opacity: 1;}
+    97%{opacity: 1;}
+    98.00001%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+.anim{
+    >img{
+        &:nth-of-type(1){ animation: img1 40s linear infinite;}
+        &:nth-of-type(2){ animation: img2 40s linear infinite;}
+        &:nth-of-type(3){ animation: img3 40s linear infinite;}
+        &:nth-of-type(4){ animation: img4 40s linear infinite;}
+        &:nth-of-type(5){ animation: img5 40s linear infinite;}
+        &:nth-of-type(6){ animation: img6 40s linear infinite;}
+        &:nth-of-type(7){ animation: img7 40s linear infinite;}
+        &:nth-of-type(8){ animation: img8 40s linear infinite;}
+        &:nth-of-type(9){ animation: img9 40s linear infinite;}
+    }
+}
+
+
+@keyframes move {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(1600px);}   
+}
+
+.artic{
+    animation: move 50s linear infinite;
+
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+
+
+
+
+@keyframes anim1 {
+    0%   { left: -100%; }
+    5%   { left: 0; }
+    25%  { left: 0; }
+    30%  { left: 100%; }
+    100% { left: 100%; }}
+
+
+@keyframes anim2 {
+  0%, 24%  { left: -100%; }
+  25%      { left: -100%; }
+  30%      { left: 0; }
+  50%      { left: 0; }
+  55%      { left: 100%; }
+  100%     { left: 100%; }}
+
+
+@keyframes anim3 {
+  0%, 49% { left: -100%; }
+  50%{ left: -100%; }
+  55%{ left: 0; }
+  75%{ left: 0; }
+  80%{ left: 100%; }
+  100%{ left: 100%; }}
+
+  @keyframes anim4 {
+    0%, 74%,76%  { left: -100%; }
+    80%      { left: 0; }
+    100%     { left: 0; }}
+
+.resturan{
+    >figure{
+        &:nth-of-type(1){ animation: anim1   20s  ease  infinite; }
+        &:nth-of-type(2){ animation: anim2   20s  ease  infinite; }
+        &:nth-of-type(3){ animation: anim3   20s  ease  infinite; }
+        &:nth-of-type(4){ animation: anim4   20s  ease  infinite; }
+    }
+}
+
+
+
+@keyframes comment1 {
+  0%   { left: 1%; }
+  10%  { left: 1%; }
+  30%  { left: 1%; }
+  40%  { left: 100%; }
+  100% { left: 100%; }
+}
+
+
+
+@keyframes comment2{
+  0%, 30%  { left: -100%; }
+  40%      { left: 1%; }
+  60%      { left: 1%; }
+  70%      { left: 100%; }
+  100%     { left: 100%; }
+}
+
+
+@keyframes comment3 {
+  0%, 60%  { left: -100%; }
+  70%      { left: 1%; }
+  90%      { left: 1%; }
+  98%      {left: 1%;}
+  100%     { left: 100%; }}
+
+.comment{
+    &:nth-of-type(1) { animation: comment1 12s linear infinite;}
+    &:nth-of-type(2) { animation: comment2 12s linear infinite;}
+    &:nth-of-type(3) { animation: comment3 12s linear infinite;}
+}
+
+
+@keyframes foot1{
+    0%{border-radius:37% 63% 41% 59% / 56% 34% 66% 44% ;}
+    50%{border-radius:64% 36% 63% 37% / 37% 59% 41% 63%  ;}
+    100%{border-radius:30% 70% 51% 49% / 62% 41% 59% 38%   ;}
+ }
+
+@keyframes foot2{
+    0%{border-radius:30% 70% 51% 49% / 62% 41% 59% 38%  ;}
+    50%{border-radius:37% 63% 41% 59% / 56% 34% 66% 44%  ;}
+    100%{border-radius:64% 36% 63% 37% / 37% 59% 41% 63%   ;}
+}
+
+.myfoot{
+    @apply w-[170px] h-[170px] fixed bottom-[30px] left-[20px];
+
+    &:hover{
+        >img,&::before{
+            animation-play-state: paused;
+        }
+        >figcaption{
+            top: 10px;
+            opacity: 1;
+        }
+        >a{
+            left: 90%;
+            opacity: 1;
+        }
+    }
+
+    &::before{
+        content: '';
+        display: flex;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom:5px;
+        left:5px;
+        background-color:#e4a853;
+        animation: foot1 linear infinite alternate 6s;
+        z-index: 10;
+
+    }
+
+    >img{
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        animation: foot2 linear infinite alternate 6s;
+        position: absolute;
+        bottom:13px;
+        left: 10px;
+        z-index: 50;
+    }
+
+    >a{
+        position: absolute;
+        z-index: 10;
+        left: 30%;
+        font-size: 20px;
+        color: rgb(79, 56, 27);
+        transition: .4s;
+        opacity: 0;
+        color:#e4a853 ;
+
+        &:nth-of-type(1){
+            top: 0;
+            font-size: 20px;
+        }
+        &:nth-of-type(2){
+            top: 28%;
+            font-size: 20px;
+            transition-delay: .1s;
+        }
+        &:nth-of-type(3){
+            top: 56%;
+            font-size: 25px;
+            transition-delay: .2s;
+          
+        }
+        &:nth-of-type(4){
+            top: 84%;
+            font-size: 20px;
+            transition-delay: .3s;
+            
+        }
+       
+    
+        
+    }
+
+    >figcaption{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        color:#e4a853;
+        text-transform: capitalize;
+        top: 20px;
+        left: -20px;
+        z-index: 20;
+        transition: .4s;
+        font-weight: bold;
+        transition-delay: .2s;
+        opacity: 0;
+    }
+}
+
+
