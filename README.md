@@ -1,4 +1,4 @@
-# Espinas
+# Espinas palace
 
 
 -[Demo Project](https://ghazalehnezamghadiri.github.io/Espinas/) 
