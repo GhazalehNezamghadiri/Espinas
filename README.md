@@ -1,5 +1,7 @@
 # Espinas palace
 
+## Espinas Hotel meets Tailwind — where style checks in before guests!
+
 
 -[Demo Project](https://ghazalehnezamghadiri.github.io/Espinas/) 
 
